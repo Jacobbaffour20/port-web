@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORT JKBG</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+    <script src="https://kit.fontawesome.com/8ffbc640b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <img src="PICS/LOGO1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>STUDENT ENGINEER - CSE</p>
+                <H1>Hi, I'm <span>Jacob</span> <br>from Ghana</H1>
+                <a href="JACOB GYAMFI 0249007664.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- -------------------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="PICS/about me-Photoroom.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A Computer Science and Engineering graduate from the University of Mines and Technology
+                        (UMaT), with a strong foundation in software development, data analysis, and computer systems
+                        design. Based in Ghana, I am passionate about technology and innovation, and constantly eager to
+                        expand my skills in programming and cybersecurity. My academic background and hands-on
+                        internship experiences have equipped me to make valuable contributions to tech-focused
+                        organisations.</p>
+
+
+                    <div class="tab-titles">
+                        <button class="tab-links active-link" onclick="opentab(event,'education')">Education</button>
+                        <button class="tab-links" onclick="opentab(event, 'skills')">Skills</button>
+                        <button class="tab-links" onclick="opentab(event,'experience')">Experience</button>
+                    </div>
+
+
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>OSEI TUTU BOYS SHS</span><br>Certification, GENERAL SCIENCE</li>
+                            <li><span>UNIVERSITY OF MINES AND TECHNOLOGY</span><br>Bachelor's Degree, COMPUTER SCIENCE
+                                AND
+                                ENGINEERING</li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Technical Skills</span><br>Programming: Python, Java, C++
+                                <br>Web Development: HTML, CSS, JavaScript
+                                <br>UI/UX Design: Figma
+                                <br>Database: MySQL
+                                <br>Software: Microsoft Office Suite, Adobe Lightroom, WordPress
+                            </li>
+                            <li><span>Soft Skills</span><br>Leadership
+                                <br>Organisational Skills
+                                <br>Problem-Solving
+                                <br>Communication
+                                <br>Teamwork
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>DVLA KUMASI, GHANA</span><br>MANAGEMENT OF INFORMATION SYSTEMS <br>MAY - JUN. 2023
+                                <br>Internship
+                            </li>
+                            <li><span>GRA KUMASI, GHANA</span><br>JUNIOR SYSTEM ADMINISTRATOR <br>OCT. - NOV. 2024
+                                <br>Part-time
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------services----------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full-Stack Development</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut enim voluptatem tempora, ratione
+                        placeat alias excepturi cupiditate saepe accusamus id repellendus ut perferendis sunt
+                        repudiandae architecto, sequi consectetur inventore minus.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Ui/Ux Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut enim voluptatem tempora, ratione
+                        placeat alias excepturi cupiditate saepe accusamus id repellendus ut perferendis sunt
+                        repudiandae architecto, sequi consectetur inventore minus.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Mobile App Development</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut enim voluptatem tempora, ratione
+                        placeat alias excepturi cupiditate saepe accusamus id repellendus ut perferendis sunt
+                        repudiandae architecto, sequi consectetur inventore minus.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- --------------------portfolio------------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="PICS/figma 1.jpg" alt="">
+                    <div class="layer">
+                        <h3>IG CLONE</h3>
+                        <p>A Figma Clone of Instagram</p>
+                        <a
+                            href="https://www.figma.com/proto/eCEqomuFthXtR5HVMML1QV/IG-UI%2FUX-(Community)?node-id=0-1&t=VoJupwHhfLIl04v4-1"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="PICS/fyp.jpg" alt="">
+                    <div class="layer">
+                        <h3>SKILLS SAGE</h3>
+                        <p>Final Year Project Documentation</p>
+                        <a href="IG UI_UX (Community) (1).pdf" download><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="PICS/wine.jpg" alt="">
+                    <div class="layer">
+                        <h3>WINE SHOP</h3>
+                        <p>Figma Wine Shop Interface</p>
+                        <a href="https://www.behance.net/gallery/182259785/WINE-SHOP-UI"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> See More</a>
+        </div>
+    </div>
+    <!-- --------------contact--------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-paper-plane"></i> <a
+                            href="mailto:jacobkyeibaffourgyamfi@gmail.com">jacobkyeibaffourgyamfi@gmail.com</a></p>
+
+                    <p><i class="fa-solid fa-square-phone"></i> <a href="tel:+233249007664">+233 249 00 7664</a></p>
+                    <p><i class="fa-solid fa-square-phone"></i> <a href="tel:+233206027217">+233 206 02 7217</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/jacob-gyamfi-9a6479237"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a
+                            href="https://github.com/Jacobbaffour20/Jacobbaffour20/blame/1e5c14d13a7fbbdd4b48e9bf967b5e8318fc2700/README.md"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/jacobbaffour?igsh=eTZ3b21ycWdybjBo&utm_source=qr"><i
+                                class="fa-brands fa-instagram"></i></a>
+
+                    </div>
+                    <a href="JACOB GYAMFI 0249007664.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btnn2 ">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © JKBG Port <i class="fa-solid fa-crown"></i>. </p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(event, tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0"
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwRZMoh1P0jDQOVL-J-n3W_XeesOn8UlRxRRFVa6ZOErpwCxwJlSjd3_PiOytkWPw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
